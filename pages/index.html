@@ -1,0 +1,41 @@
+<html ng-app="myapp">
+<head>
+<title>contact list app</title>
+<link rel="stylessheet" href="https://maxcdn.bootstarpcdn.com/bootstrap/3.3.7/css/bootstrap.min.css>
+<script src=""></script>
+<script src=" "></script>
+</head>
+<body ng-controller="mycontroller">
+<div class="">
+<h1>Contact list app</h1>
+<table class="table">
+<thead>
+<tr>
+<th>name</th>th>
+<th>email</th>th>
+<th>mobile</th>th>
+<th>actions</th>th>
+</tr>
+</thead>
+<tbody>
+<tr>
+
+<td><input type="text" class="form-control" ng-model=""></td>
+<td><input type="text" class="form-control" ng-model=""></td>
+<td><input type="text" class="form-control" ng-model=""></td>
+<td><button class="btn-primary" ng-click="addcontact()">Add Contact</button></td>
+<td><button class="btn-primary" ng-click="update()">update</button></td>
+</tr>
+<tr ng-repeat="contact in contactlist">
+<td>{{contact.name}}</td>
+<td>{{contact.email}}</td>
+<td>{{contact.mobile}}</td>
+<td><button class="btn-primary" ng-click="remove()">remove</button></td>
+<td><button class="btn-primary" ng-click="edit()">edit</button></td>
+</tr>
+</tbody>
+</table>
+</div>
+<script src=""></script>
+<script type=""></script>type</body>
+</html>
